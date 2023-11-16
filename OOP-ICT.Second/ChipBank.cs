@@ -1,9 +1,9 @@
 namespace OOP_ICT.Second;
 
-public class BlackjackCasino
+public class ChipBank
 {
     protected PlayerAccountFactory AccountFactory;
-    public BlackjackCasino(PlayerAccountFactory accountFactory)
+    public ChipBank(PlayerAccountFactory accountFactory)
     {
         AccountFactory = accountFactory;
     }

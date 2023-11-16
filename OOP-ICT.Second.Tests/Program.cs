@@ -75,7 +75,7 @@ namespace OOP_ICT.Second.Tests
         public void CreateAccount_ReturnsValidPlayerAccount()
         {
             // Arrange
-            var casino = new BlackjackCasino(new PlayerAccountFactory());
+            var casino = new ChipBank(new PlayerAccountFactory());
 
             // Act
             var account = casino.CreateAccount(200.0);
@@ -89,7 +89,7 @@ namespace OOP_ICT.Second.Tests
         public void AddMoney_IncreasesBalance()
         {
             // Arrange
-            var casino = new BlackjackCasino(new PlayerAccountFactory());
+            var casino = new ChipBank(new PlayerAccountFactory());
             var account = casino.CreateAccount(200.0);
 
             // Act
@@ -103,7 +103,7 @@ namespace OOP_ICT.Second.Tests
         public void RemoveMoney_DecreasesBalance()
         {
             // Arrange
-            var casino = new BlackjackCasino(new PlayerAccountFactory());
+            var casino = new ChipBank(new PlayerAccountFactory());
             var account = casino.CreateAccount(200.0);
 
             // Act
@@ -117,7 +117,7 @@ namespace OOP_ICT.Second.Tests
         public void Blackjack_DepositsCorrectAmountForBlackjack()
         {
             // Arrange
-            var casino = new BlackjackCasino(new PlayerAccountFactory());
+            var casino = new ChipBank(new PlayerAccountFactory());
             var account = casino.CreateAccount(200.0);
 
             // Act
