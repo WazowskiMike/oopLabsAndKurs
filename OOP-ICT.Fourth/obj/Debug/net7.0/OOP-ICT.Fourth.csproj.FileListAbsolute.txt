@@ -1,0 +1,15 @@
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/bin/Debug/net7.0/OOP-ICT.Fourth
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/bin/Debug/net7.0/OOP-ICT.Fourth.deps.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/bin/Debug/net7.0/OOP-ICT.Fourth.runtimeconfig.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/bin/Debug/net7.0/OOP-ICT.Fourth.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/bin/Debug/net7.0/OOP-ICT.Fourth.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.csproj.AssemblyReference.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.AssemblyInfoInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.AssemblyInfo.cs
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.csproj.CoreCompileInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/refint/OOP-ICT.Fourth.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/OOP-ICT.Fourth.genruntimeconfig.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth/obj/Debug/net7.0/ref/OOP-ICT.Fourth.dll

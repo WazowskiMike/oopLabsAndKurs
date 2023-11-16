@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">INFO</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bea5a3b_002D8b87_002D417d_002D81e8_002D5a4091bc4f15/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CardDeckTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::4C63C867-63FA-4251-B2CC-72943EF9BAD3::net7.0::OOP_ICT.First.Tests.CardDeckTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::4C63C867-63FA-4251-B2CC-72943EF9BAD3::net7.0::OOP_ICT.First.Tests.DealerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E8BBB541-F5DD-4C78-BEB0-A2D98F0847CC::net7.0::OOP_ICT.Second.Tests.BankTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E8BBB541-F5DD-4C78-BEB0-A2D98F0847CC::net7.0::BankTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E8BBB541-F5DD-4C78-BEB0-A2D98F0847CC::net7.0::BlackjackCasinoTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E8BBB541-F5DD-4C78-BEB0-A2D98F0847CC::net7.0::OOP_ICT.Second.Tests.AccountTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E8BBB541-F5DD-4C78-BEB0-A2D98F0847CC::net7.0::OOP_ICT.Second.Tests.BlackjackCasinoTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

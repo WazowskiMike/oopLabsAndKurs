@@ -1,0 +1,15 @@
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/bin/Debug/net7.0/OOP-ICT.Fifth.Tests
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/bin/Debug/net7.0/OOP-ICT.Fifth.Tests.deps.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/bin/Debug/net7.0/OOP-ICT.Fifth.Tests.runtimeconfig.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/bin/Debug/net7.0/OOP-ICT.Fifth.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/bin/Debug/net7.0/OOP-ICT.Fifth.Tests.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.csproj.AssemblyReference.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.AssemblyInfoInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.AssemblyInfo.cs
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.csproj.CoreCompileInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/refint/OOP-ICT.Fifth.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/OOP-ICT.Fifth.Tests.genruntimeconfig.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth.Tests/obj/Debug/net7.0/ref/OOP-ICT.Fifth.Tests.dll

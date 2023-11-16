@@ -1,0 +1,15 @@
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/bin/Debug/net7.0/OOP-ICT.Third.Tests
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/bin/Debug/net7.0/OOP-ICT.Third.Tests.deps.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/bin/Debug/net7.0/OOP-ICT.Third.Tests.runtimeconfig.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/bin/Debug/net7.0/OOP-ICT.Third.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/bin/Debug/net7.0/OOP-ICT.Third.Tests.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.csproj.AssemblyReference.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.AssemblyInfoInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.AssemblyInfo.cs
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.csproj.CoreCompileInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/refint/OOP-ICT.Third.Tests.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/OOP-ICT.Third.Tests.genruntimeconfig.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/Debug/net7.0/ref/OOP-ICT.Third.Tests.dll

@@ -1,0 +1,14 @@
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/bin/Debug/net7.0/OOP-ICT.Second
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/bin/Debug/net7.0/OOP-ICT.Second.deps.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/bin/Debug/net7.0/OOP-ICT.Second.runtimeconfig.json
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/bin/Debug/net7.0/OOP-ICT.Second.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/bin/Debug/net7.0/OOP-ICT.Second.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.AssemblyInfoInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.AssemblyInfo.cs
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.csproj.CoreCompileInputs.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/refint/OOP-ICT.Second.dll
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.pdb
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/OOP-ICT.Second.genruntimeconfig.cache
+/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/obj/Debug/net7.0/ref/OOP-ICT.Second.dll
