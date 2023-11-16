@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj": {}
+    "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj": {}
   },
   "projects": {
-    "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj": {
+    "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj",
+        "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj",
         "projectName": "OOP-ICT.Fourth.Tests",
-        "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj",
+        "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fourth.Tests/OOP-ICT.Fourth.Tests.csproj",
         "packagesPath": "/Users/artem/.nuget/packages/",
-        "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fourth.Tests/obj/",
+        "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fourth.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/artem/.nuget/NuGet/NuGet.Config"

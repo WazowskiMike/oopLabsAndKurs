@@ -12,3 +12,17 @@
 /Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.pdb
 /Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.genruntimeconfig.cache
 /Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/obj/Debug/net7.0/ref/OOP-ICT.First.dll
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/bin/Debug/net7.0/OOP-ICT.First
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/bin/Debug/net7.0/OOP-ICT.First.deps.json
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/bin/Debug/net7.0/OOP-ICT.First.runtimeconfig.json
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/bin/Debug/net7.0/OOP-ICT.First.dll
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/bin/Debug/net7.0/OOP-ICT.First.pdb
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.AssemblyInfoInputs.cache
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.AssemblyInfo.cs
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.csproj.CoreCompileInputs.cache
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.dll
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/refint/OOP-ICT.First.dll
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.pdb
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/OOP-ICT.First.genruntimeconfig.cache
+/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/Debug/net7.0/ref/OOP-ICT.First.dll

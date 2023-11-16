@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj": {}
+    "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj": {}
   },
   "projects": {
-    "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj": {
+    "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj",
+        "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj",
         "projectName": "OOP-ICT.Third.Tests",
-        "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj",
+        "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Third.Tests/OOP-ICT.Third.Tests.csproj",
         "packagesPath": "/Users/artem/.nuget/packages/",
-        "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Third.Tests/obj/",
+        "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Third.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/artem/.nuget/NuGet/NuGet.Config"
