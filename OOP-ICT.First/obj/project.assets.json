@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/OOP-ICT.First.csproj",
+      "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/OOP-ICT.First.csproj",
       "projectName": "OOP-ICT.First",
-      "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/OOP-ICT.First.csproj",
+      "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/OOP-ICT.First.csproj",
       "packagesPath": "/Users/artem/.nuget/packages/",
-      "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/obj/",
+      "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/artem/.nuget/NuGet/NuGet.Config"

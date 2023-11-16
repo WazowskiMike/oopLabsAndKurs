@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fifth/OOP-ICT.Fifth.csproj",
+      "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth/OOP-ICT.Fifth.csproj",
       "projectName": "OOP-ICT.Fifth",
-      "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fifth/OOP-ICT.Fifth.csproj",
+      "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth/OOP-ICT.Fifth.csproj",
       "packagesPath": "/Users/artem/.nuget/packages/",
-      "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Fifth/obj/",
+      "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Fifth/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/artem/.nuget/NuGet/NuGet.Config"

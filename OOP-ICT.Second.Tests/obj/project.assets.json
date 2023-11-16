@@ -5431,11 +5431,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Second.Tests/OOP-ICT.Second.Tests.csproj",
+      "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second.Tests/OOP-ICT.Second.Tests.csproj",
       "projectName": "OOP-ICT.Second.Tests",
-      "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Second.Tests/OOP-ICT.Second.Tests.csproj",
+      "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second.Tests/OOP-ICT.Second.Tests.csproj",
       "packagesPath": "/Users/artem/.nuget/packages/",
-      "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Second.Tests/obj/",
+      "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/artem/.nuget/NuGet/NuGet.Config"
@@ -5450,8 +5450,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Second/OOP-ICT.Second.csproj": {
-              "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.Second/OOP-ICT.Second.csproj"
+            "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/OOP-ICT.Second.csproj": {
+              "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.Second/OOP-ICT.Second.csproj"
             }
           }
         }

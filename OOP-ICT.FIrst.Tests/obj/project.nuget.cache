@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rd/6PMmVlohh5gfTMiv+3P6sZ8Gll2N+KFXysy8079trVCpGzfzXXAu6Rj1O5pe89MJvfbTEXkKEZ/XYGwQ/Hw==",
+  "dgSpecHash": "ROtsGWWCtR9SbEWhwT2JOD6faAjVEaulgWU6aUER7ehSY2iaCWikUlLiGurJIJ9Xlo0suib2+OLGDCjehO4GtA==",
   "success": true,
-  "projectFilePath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
+  "projectFilePath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/artem/.nuget/packages/microsoft.codecoverage/17.7.2/microsoft.codecoverage.17.7.2.nupkg.sha512",
     "/Users/artem/.nuget/packages/microsoft.net.test.sdk/17.7.2/microsoft.net.test.sdk.17.7.2.nupkg.sha512",

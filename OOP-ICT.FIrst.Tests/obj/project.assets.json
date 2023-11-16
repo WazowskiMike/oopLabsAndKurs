@@ -5431,11 +5431,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
+      "projectUniqueName": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
       "projectName": "OOP-ICT.FIrst.Tests",
-      "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
+      "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.FIrst.Tests/OOP-ICT.FIrst.Tests.csproj",
       "packagesPath": "/Users/artem/.nuget/packages/",
-      "outputPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.FIrst.Tests/obj/",
+      "outputPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.FIrst.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/artem/.nuget/NuGet/NuGet.Config"
@@ -5450,8 +5450,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/OOP-ICT.First.csproj": {
-              "projectPath": "/Users/artem/Documents/GitHub/oopLabsAndKurs/OOP-ICT.First/OOP-ICT.First.csproj"
+            "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/OOP-ICT.First.csproj": {
+              "projectPath": "/Users/artem/Documents/GitHub/WazowskiMike/OOP-ICT.First/OOP-ICT.First.csproj"
             }
           }
         }
