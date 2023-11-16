@@ -3,7 +3,11 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 public class Player 
 {
-    public void sayHi() {
+    private int Dollars;
+    public Player(int dollars) {
+        Dollars = dollars;
+    }
+        public void sayHi() {
         Console.WriteLine("Hi");
     }
 }
