@@ -9,5 +9,7 @@ public class Game {
         dealerForThisGame.Shuffle();
     }
 
-
+    public void AddPlayers(string name, double deposit) {
+        
+    }
 }
