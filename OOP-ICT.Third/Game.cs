@@ -17,22 +17,30 @@ public class Game {
 
 
     public void Start() {
-        Console.WriteLine("Пожалуйста, введите цену одной фишки ");
+        Console.WriteLine("Please, enter one chip price:");
         chipPrice = int.Parse(Console.ReadLine());
         AddPlayers();
     }
 
     public void AddPlayers() {
-        Console.WriteLine("| Для окончания регистрации нажмите ENTER в поле ввода имени |");
+        Console.WriteLine("| For end of registration press ENTER |");
         while (true) {
-            Console.WriteLine("Пожалуйста, введите имя игрока ");
+            Console.WriteLine("Please, enter player's name:");
             string name = Console.ReadLine();
             if (String.IsNullOrEmpty(name)) {
                 break;
             }
-            Console.WriteLine("Пожалуйста, введите баланс");
+            Console.WriteLine("Please, enter player's bank balance:");
             double deposit = Double.Parse(Console.ReadLine());
             playerList.Add(new Player(name, deposit));
+        }
+    }
+
+    public void BuyChips() {
+        foreach (var plr in playerList) {
+            Console.WriteLine($"Player {plr.name}, enter quantity of cihps you want to buy.");
+            Console.WriteLine($"The maximum quantity you can buy is {Math.Floor(plr.bankAccount.Balance / chipPrice)}");
+            int playerChips = 
         }
     }
 }

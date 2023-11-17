@@ -5,9 +5,9 @@ namespace OOP_ICT.Third;
 public class Player 
 {
     private PlayerAccount playerAccount;
-    private BankAccount bankAccount;
+    public BankAccount bankAccount { get; private set; }
     private ArrayList playerCardList = new();
-    private string name;
+    public string name { get; private set; }
     private int Bid = 0;
 
     public Player (string name, double deposit) {
