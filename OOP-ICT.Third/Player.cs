@@ -15,7 +15,7 @@ public class Player
         this.name = name;
     }
 
-    private void GetCard() {
-        playerCardList.Add(DealerAdapter.GiveCard());
+    private void GetCard(Card card) {
+        playerCardList.Add(card);
     }
 }

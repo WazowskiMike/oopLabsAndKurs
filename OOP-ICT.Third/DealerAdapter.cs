@@ -4,26 +4,25 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 
 public class DealerAdapter : Dealer {
-    private static CardDeck Deck;
     private ArrayList cardList = new();
+
 
     public DealerAdapter(CardDeck deck) : base(deck)
     {
-        Deck = deck ?? throw new EmptyDeckException("The deck is empty!");
     }
 
     public void Shuffle() {
-        Deck.Shuffle();
+        CardDeck.Shuffle();
     }
 
     public void GetCard() {
-        List<Card> deckAsList = Deck.CardList;
+        List<Card> deckAsList = CardDeck.CardList;
         cardList.Add(deckAsList[0]);
         deckAsList.Remove(deckAsList[0]);
     }
 
-    public static Card GiveCard() {
-        List<Card> deckAsList = Deck.CardList;
+    public Card GiveCard() {
+        List<Card> deckAsList = CardDeck.CardList;
         Card toBeGivenCard = deckAsList[0];
         deckAsList.Remove(toBeGivenCard);
         return toBeGivenCard;
