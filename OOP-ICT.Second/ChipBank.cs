@@ -12,12 +12,12 @@ public class ChipBank
         return AccountFactory.CreateAccount(initialBalance);
     }
 
-    public void AddMoney(PlayerAccount player, double amount)
+    public void AddChips(PlayerAccount player, double amount)
     {
         player.Deposit(amount);
     }
 
-    public void RemoveMoney(PlayerAccount player, double amount)
+    public void RemoveChips(PlayerAccount player, double amount)
     {
         player.WithDraw(amount);
     }

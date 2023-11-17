@@ -5,7 +5,7 @@ namespace OOP_ICT.Third;
 
 public class Game {
     private List<Player> playerList = new List<Player>();
-    private int chipPrice;
+    public int chipPrice { get; private set; }
     private CardDeck cardDeck;
     private DealerAdapter dealer;
 
