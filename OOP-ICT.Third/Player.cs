@@ -34,4 +34,20 @@ public class Player
         bankAccount.WithDraw(quantityOfChips * Game.chipPrice);
         playerAccount.Deposit(quantityOfChips);
     }
+
+    public void winChips() {
+        playerAccount.Deposit(Bid * 2);
+        Bid = 0;
+    }
+
+    public void loseChips() {
+        Bid = 0;
+    }
+
+    public void blackJack() {
+        playerAccount.Deposit(Bid * 1.5);
+        Bid = 0;
+    }
+
+    
 }
