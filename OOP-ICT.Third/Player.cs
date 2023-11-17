@@ -28,4 +28,10 @@ public class Player
             Console.WriteLine("Not enough chips in bank");
         }
     }
+
+    public void BuyChips() {
+        int quantityOfChips = int.Parse(Console.ReadLine());
+        bankAccount.WithDraw(quantityOfChips * Game.chipPrice);
+        playerAccount.Deposit(quantityOfChips);
+    }
 }

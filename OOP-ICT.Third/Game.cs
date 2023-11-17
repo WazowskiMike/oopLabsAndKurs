@@ -5,7 +5,7 @@ namespace OOP_ICT.Third;
 
 public class Game {
     private List<Player> playerList = new List<Player>();
-    public int chipPrice { get; private set; }
+    public static int chipPrice { get; private set; }
     private CardDeck cardDeck;
     private DealerAdapter dealer;
 
@@ -20,6 +20,7 @@ public class Game {
         Console.WriteLine("Please, enter one chip price:");
         chipPrice = int.Parse(Console.ReadLine());
         AddPlayers();
+        BuyChips();
     }
 
     public void AddPlayers() {
@@ -40,7 +41,7 @@ public class Game {
         foreach (var plr in playerList) {
             Console.WriteLine($"Player {plr.name}, enter quantity of cihps you want to buy.");
             Console.WriteLine($"The maximum quantity you can buy is {Math.Floor(plr.bankAccount.Balance / chipPrice)}");
-            int playerChips = 
+            plr.BuyChips();
         }
     }
 }
