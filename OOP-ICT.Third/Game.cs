@@ -6,25 +6,30 @@ namespace OOP_ICT.Third;
 public class Game {
     private List<Player> playerList = new List<Player>();
     private int chipPrice;
+    private CardDeck cardDeck;
+    private DealerAdapter dealer;
 
     public Game() {
-        CardDeck cardDeck = new CardDeck();
-        DealerAdapter dealer = new DealerAdapter(cardDeck);
-        
-        
+        cardDeck = new CardDeck();
+        dealer = new DealerAdapter(cardDeck);
     }
+
+
 
     public void Start() {
         Console.WriteLine("Пожалуйста, введите цену одной фишки ");
         chipPrice = int.Parse(Console.ReadLine());
         AddPlayers();
-
     }
 
     public void AddPlayers() {
-        while (Console.ReadLine().Trim() != ""){
+        Console.WriteLine("| Для окончания регистрации нажмите ENTER в поле ввода имени |");
+        while (true) {
             Console.WriteLine("Пожалуйста, введите имя игрока ");
             string name = Console.ReadLine();
+            if (String.IsNullOrEmpty(name)) {
+                break;
+            }
             Console.WriteLine("Пожалуйста, введите баланс");
             double deposit = Double.Parse(Console.ReadLine());
             playerList.Add(new Player(name, deposit));
