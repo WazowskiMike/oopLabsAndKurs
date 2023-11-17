@@ -9,9 +9,9 @@ public class Player
     private ArrayList playerCardList = new();
     private string name;
 
-    public Player (PlayerAccount playerAccount, BankAccount bankAccount, string name) {
-        this.playerAccount = playerAccount;
-        this.bankAccount = bankAccount;
+    public Player (string name, double deposit) {
+        this.playerAccount = new ChipBank(new PlayerAccountFactory()).CreateAccount(0);
+        this.bankAccount = new Bank(new BankAccountFactory()).CreateAccount(deposit);
         this.name = name;
     }
 
