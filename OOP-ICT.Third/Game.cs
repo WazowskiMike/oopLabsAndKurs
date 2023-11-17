@@ -40,7 +40,7 @@ public class Game {
         foreach (var plr in playerList) {
             Console.WriteLine($"Player {plr.name}, enter quantity of cihps you want to buy.");
             Console.WriteLine($"The maximum quantity you can buy is {Math.Floor(plr.bankAccount.Balance / chipPrice)}");
-            int playerChips = 
+            
         }
     }
 }

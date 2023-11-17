@@ -28,5 +28,20 @@ public class Player
             Console.WriteLine("Not enough chips in bank");
         }
     }
+
+    public void winChips() {
+        playerAccount.Deposit(Bid * 2);
+        Bid = 0;
+    }
+
+    public void loseChips() {
+        Bid = 0;
+    }
+
+    public void blackJack() {
+        playerAccount.Deposit(Bid * 1.5);
+        Bid = 0;
+    }
+
     
 }
