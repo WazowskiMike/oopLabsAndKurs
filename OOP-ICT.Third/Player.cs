@@ -16,6 +16,6 @@ public class Player
     }
 
     private void GetCard() {
-        DealerAdapter.GiveCard(playerCardList);
+        playerCardList.Add(DealerAdapter.GiveCard());
     }
 }

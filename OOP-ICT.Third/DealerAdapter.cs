@@ -22,9 +22,10 @@ public class DealerAdapter : Dealer {
         deckAsList.Remove(deckAsList[0]);
     }
 
-    public static void GiveCard(ArrayList playerCards) {
+    public static Card GiveCard() {
         List<Card> deckAsList = Deck.CardList;
-        playerCards.Add(deckAsList[0]);
-        deckAsList.Remove(deckAsList[0]);
+        Card toBeGivenCard = deckAsList[0];
+        deckAsList.Remove(toBeGivenCard);
+        return toBeGivenCard;
     }
 } 
