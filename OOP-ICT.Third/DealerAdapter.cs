@@ -4,7 +4,7 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 
 public class DealerAdapter : Dealer {
-    private ArrayList cardList = new();
+    private List<Card> dealerHand = new List<Card>();
 
 
     public DealerAdapter(CardDeck deck) : base(deck)
@@ -16,15 +16,14 @@ public class DealerAdapter : Dealer {
     }
 
     public void GetCard() {
-        List<Card> deckAsList = CardDeck.CardList;
-        cardList.Add(deckAsList[0]);
-        deckAsList.Remove(deckAsList[0]);
+        Card topCard = CardDeck.CardList[0];
+        dealerHand.Add(topCard);
+        CardDeck.CardList.Remove(topCard);
     }
 
     public Card GiveCard() {
-        List<Card> deckAsList = CardDeck.CardList;
-        Card toBeGivenCard = deckAsList[0];
-        deckAsList.Remove(toBeGivenCard);
+        Card toBeGivenCard = CardDeck.CardList[0];
+        CardDeck.CardList.Remove(toBeGivenCard);
         return toBeGivenCard;
     }
 } 

@@ -21,6 +21,8 @@ public class Game {
         chipPrice = int.Parse(Console.ReadLine());
         AddPlayers();
         BuyChips();
+        MakeBids();
+        FirstDistribution();
     }
 
     public void AddPlayers() {
@@ -39,9 +41,25 @@ public class Game {
 
     public void BuyChips() {
         foreach (var plr in playerList) {
-            Console.WriteLine($"Player {plr.name}, enter quantity of cihps you want to buy.");
+            Console.WriteLine($"Player {plr.name}, enter quantity of chips you want to buy.");
             Console.WriteLine($"The maximum quantity you can buy is {Math.Floor(plr.bankAccount.Balance / chipPrice)}");
             plr.BuyChips();
         }
+    }
+
+    public void MakeBids() {
+        foreach (var player in playerList) {
+            Console.WriteLine($"Player {player.name}, enter quantity of chips you want to bid.");
+            Console.WriteLine($"Available chips : {player.playerAccount.Balance}");
+            player.makeBid();
+        }
+    }
+
+    public void FirstDistribution() {
+        foreach (var player in playerList) {
+            player.GetCard(dealer.GiveCard());
+            player.GetCard(dealer.GiveCard());
+        }
+        dealer.GetCard();
     }
 }

@@ -4,9 +4,9 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 public class Player 
 {
-    private PlayerAccount playerAccount;
+    public PlayerAccount playerAccount { get; private set; }
     public BankAccount bankAccount { get; private set; }
-    private ArrayList playerCardList = new();
+    private List<Card> playerHand = new List<Card>();
     public string name { get; private set; }
     private int Bid = 0;
 
@@ -16,11 +16,12 @@ public class Player
         this.name = name;
     }
 
-    private void GetCard(Card card) {
-        playerCardList.Add(card);
+    public void GetCard(Card card) {
+        playerHand.Add(card);
     }
 
-    public void makeBid(int bid) {
+    public void makeBid() {
+        int bid = int.Parse(Console.ReadLine());
         if (playerAccount.Balance >= bid) {
             Bid = bid;
             playerAccount.WithDraw(Bid);
