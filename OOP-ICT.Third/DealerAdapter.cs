@@ -31,10 +31,10 @@ public class DealerAdapter : Dealer {
         foreach (var card in dealerHand) {
             Console.WriteLine($"{card.Suit} {card.CardValue}");
         }
-        Console.WriteLine($"Points sum = " {CorrectSum()});
+        Console.WriteLine($"Points sum =  {CorrectSum()}");
     }
 
-    public int CorrectSum () {
+    public int CorrectSum() {
         int aceCounter = 0;
         int pointsSum = 0;
         foreach (var card in dealerHand) {
