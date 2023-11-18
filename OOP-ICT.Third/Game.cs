@@ -25,6 +25,7 @@ public class Game {
         MakeBids();
         FirstDistribution();
         FinalDistribution();
+        EndGame();
     }
 
     public void AddPlayers() {
@@ -58,16 +59,24 @@ public class Game {
     }
 
     public void FirstDistribution() {
+        List<Player> toRemove = new List<Player>();
         foreach (var player in playerList) {
             player.GetCard(dealer.GiveCard());
             player.GetCard(dealer.GiveCard());
             player.ShowCardsInfo();
+            if (player.CorrectSum() == 21) {
+                Console.WriteLine($"{player.name}, it's blackjack! You won {player.Bid * 1.5} chips!");
+                player.BlackJack();
+                toRemove.Add(player);
+            }
         }
+        playerList.RemoveAll(x => toRemove.Contains(x));
         dealer.GetCard();
         dealer.ShowInfo();
     }
 
     public void FinalDistribution() {
+        List<Player> toRemove = new List<Player>();
         foreach (var player in playerList) {
             while (player.CorrectSum() < 21) {
                 Console.WriteLine($"{player.name}, do you want to take one more card? Print yes/no");
@@ -82,16 +91,49 @@ public class Game {
             if (player.CorrectSum() > 21) {
                 Console.WriteLine($"You lost {player.Bid} chips");
                 player.LoseChips();
+                toRemove.Add(player);
             }
         }
+        playerList.RemoveAll(x => toRemove.Contains(x));
         while (dealer.CorrectSum() < 17) {
             dealer.GetCard();
             dealer.ShowInfo(); 
         }
-        /* ебаный в рот этого казино
-        ты кто такой сука чтобы это делать
-        один стоит палит, другой колоду тасует
-        у вас дилер есть блять
-        */
+    }
+
+    public void EndGame () {
+        Console.WriteLine("We are ready to compare cards!");
+        if (dealer.CorrectSum() == 21) {
+            foreach (var player in playerList) {
+                player.ShowCardsInfo();
+                if (player.CorrectSum() == 21) {
+                    Console.WriteLine($"{player.name}, it's a draw! Your chips will be returned");
+                    player.ReturnChips();
+                } else {
+                    Console.WriteLine($"{player.name}, sorry ! You lost {player.Bid} chips");
+                    player.LoseChips();
+                }
+            }
+        } else if (dealer.CorrectSum() > 21) {
+            foreach (var player in playerList) {
+                player.ShowCardsInfo();
+                Console.WriteLine($"{player.name}, you won {player.Bid * 2} chips!");
+                player.WinChips();
+            }
+        } else {
+            foreach (var player in playerList) {
+                player.ShowCardsInfo();
+                if (player.CorrectSum() < dealer.CorrectSum()) {
+                    Console.WriteLine($"{player.name}, sorry ! You lost {player.Bid} chips");
+                    player.LoseChips();
+                } else if (player.CorrectSum() == dealer.CorrectSum()) {
+                    Console.WriteLine($"{player.name}, it's a draw! Your chips will be returned");
+                    player.ReturnChips();
+                } else {
+                    Console.WriteLine($"{player.name}, you won {player.Bid * 2} chips!");
+                    player.WinChips();
+                }
+            }
+        }
     }
 }

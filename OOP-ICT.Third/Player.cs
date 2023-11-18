@@ -73,6 +73,11 @@ public class Player
         Bid = 0;
     }
 
+    public void ReturnChips() {
+        playerAccount.Deposit(Bid);
+        Bid = 0;
+    }
+
     public void BlackJack() {
         playerAccount.Deposit(Bid * 1.5);
         Bid = 0;
