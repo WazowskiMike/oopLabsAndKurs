@@ -86,7 +86,12 @@ public class Game {
         }
         while (dealer.CorrectSum() < 17) {
             dealer.GetCard();
-            dealer.ShowInfo();
+            dealer.ShowInfo(); 
         }
+        /* ебаный в рот этого казино
+        ты кто такой сука чтобы это делать
+        один стоит палит, другой колоду тасует
+        у вас дилер есть блять
+        */
     }
 }
