@@ -44,7 +44,7 @@ public class DealerAdapter : Dealer {
             } else {
                 pointsSum += card.Value;
             }
-        }
+        }   
         while (pointsSum > 21 && aceCounter > 0) {
             pointsSum -= 10;
             aceCounter--;

@@ -9,7 +9,7 @@ public class Player
     public BankAccount bankAccount { get; private set; }
     private List<Card> playerHand = new List<Card>();
     public string name { get; private set; }
-    private int Bid = 0;
+    public int Bid = 0;
    
 
     public Player (string name, double deposit) {
@@ -64,16 +64,16 @@ public class Player
         playerAccount.Deposit(quantityOfChips);
     }
 
-    public void winChips() {
+    public void WinChips() {
         playerAccount.Deposit(Bid * 2);
         Bid = 0;
     }
 
-    public void loseChips() {
+    public void LoseChips() {
         Bid = 0;
     }
 
-    public void blackJack() {
+    public void BlackJack() {
         playerAccount.Deposit(Bid * 1.5);
         Bid = 0;
     }

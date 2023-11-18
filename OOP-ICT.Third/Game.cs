@@ -12,6 +12,7 @@ public class Game {
     public Game() {
         cardDeck = new CardDeck();
         dealer = new DealerAdapter(cardDeck);
+        dealer.Shuffle();
     }
 
 
@@ -23,6 +24,7 @@ public class Game {
         BuyChips();
         MakeBids();
         FirstDistribution();
+        FinalDistribution();
     }
 
     public void AddPlayers() {
@@ -59,7 +61,32 @@ public class Game {
         foreach (var player in playerList) {
             player.GetCard(dealer.GiveCard());
             player.GetCard(dealer.GiveCard());
+            player.ShowCardsInfo();
         }
         dealer.GetCard();
+        dealer.ShowInfo();
+    }
+
+    public void FinalDistribution() {
+        foreach (var player in playerList) {
+            while (player.CorrectSum() < 21) {
+                Console.WriteLine($"{player.name}, do you want to take one more card? Print yes/no");
+                string answer = Console.ReadLine();
+                if (answer.ToLower().Trim().Equals("yes")) {
+                    player.GetCard(dealer.GiveCard());
+                    player.ShowCardsInfo();
+                } else {
+                    break;
+                }
+            }
+            if (player.CorrectSum() > 21) {
+                Console.WriteLine($"You lost {player.Bid} chips");
+                player.LoseChips();
+            }
+        }
+        while (dealer.CorrectSum() < 17) {
+            dealer.GetCard();
+            dealer.ShowInfo();
+        }
     }
 }
