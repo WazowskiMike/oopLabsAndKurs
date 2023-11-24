@@ -5,9 +5,9 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 public class Player 
 {
-    public PlayerAccount playerAccount { get; private set; }
+    private PlayerAccount playerAccount;
     public BankAccount bankAccount { get; private set; }
-    private List<Card> playerHand = new List<Card>();
+    public List<Card> playerHand = new List<Card>();
     public string name { get; private set; }
     public int Bid = 0;
    
@@ -29,6 +29,8 @@ public class Player
     public int CorrectSum () {
         int aceCounter = 0;
         int pointsSum = 0;
+        bool pointsToLose = pointsSum > 21;
+        bool anyAcesInHand = aceCounter > 0;
         foreach (var card in playerHand) {
             if (card.CardValue == CardValues.Ace) {
                 aceCounter += 1;
@@ -37,7 +39,7 @@ public class Player
                 pointsSum += card.Value;
             }
         }
-        while (pointsSum > 21 && aceCounter > 0) {
+        while (pointsToLose && anyAcesInHand) {
             pointsSum -= 10;
             aceCounter--;
         }
@@ -49,17 +51,24 @@ public class Player
     }
 
     public void makeBid() {
-        int bid = int.Parse(Console.ReadLine());
+        int bid = TypeInt();
         if (playerAccount.Balance >= bid) {
             Bid = bid;
             playerAccount.WithDraw(Bid);
         } else {
-            Console.WriteLine("Not enough chips in bank");
+            Console.WriteLine("Not enough chips in bank. Choose another amount to bid.");
+            bid = TypeInt();
+            if (playerAccount.Balance >= bid) {
+                Bid = bid;
+                playerAccount.WithDraw(Bid);
+            } else {
+                Console.WriteLine("You've been banned. Get out of my casino.");
+            }
         }
     }
 
     public void BuyChips() {
-        int quantityOfChips = int.Parse(Console.ReadLine());
+        int quantityOfChips = TypeInt();
         bankAccount.WithDraw(quantityOfChips * Game.chipPrice);
         playerAccount.Deposit(quantityOfChips);
     }
@@ -83,5 +92,7 @@ public class Player
         Bid = 0;
     }
 
-    
+    public int TypeInt() {
+        return int.Parse(Console.ReadLine());
+    }
 }

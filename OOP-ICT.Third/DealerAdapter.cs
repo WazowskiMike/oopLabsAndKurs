@@ -4,10 +4,19 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 
 public class DealerAdapter : Dealer {
+
+    private static DealerAdapter dealer; 
     private List<Card> dealerHand = new List<Card>();
 
-    public DealerAdapter(CardDeck deck) : base(deck)
+    private DealerAdapter(CardDeck deck) : base(deck)
     {
+    }
+
+    public static DealerAdapter getDealer(CardDeck cardDeck) {
+        if (dealer == null) {
+            dealer = new DealerAdapter(cardDeck);
+        }
+        return dealer;
     }
 
     public void Shuffle() {

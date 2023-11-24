@@ -11,11 +11,9 @@ public class Game {
 
     public Game() {
         cardDeck = new CardDeck();
-        dealer = new DealerAdapter(cardDeck);
+        dealer = DealerAdapter.getDealer(cardDeck);
         dealer.Shuffle();
     }
-
-
 
     public void Start() {
         Console.WriteLine("Please, enter one chip price:");
@@ -31,14 +29,19 @@ public class Game {
     public void AddPlayers() {
         Console.WriteLine("| For end of registration press ENTER |");
         while (true) {
-            Console.WriteLine("Please, enter player's name:");
-            string name = Console.ReadLine();
-            if (String.IsNullOrEmpty(name)) {
-                break;
+            try { 
+                Console.WriteLine("Please, enter player's name:");
+                string name = Console.ReadLine();
+                if (String.IsNullOrEmpty(name)) {
+                    break;
+                }
+                Console.WriteLine("Please, enter player's bank balance:");
+                double deposit = Double.Parse(Console.ReadLine());
+                playerList.Add(new Player(name, deposit));
             }
-            Console.WriteLine("Please, enter player's bank balance:");
-            double deposit = Double.Parse(Console.ReadLine());
-            playerList.Add(new Player(name, deposit));
+            catch (Exception) {
+                throw new WrongFormatException("Wrong player format.");
+            }
         }
     }
 
@@ -53,7 +56,6 @@ public class Game {
     public void MakeBids() {
         foreach (var player in playerList) {
             Console.WriteLine($"Player {player.name}, enter quantity of chips you want to bid.");
-            Console.WriteLine($"Available chips : {player.playerAccount.Balance}");
             player.makeBid();
         }
     }
@@ -95,6 +97,9 @@ public class Game {
             }
         }
         playerList.RemoveAll(x => toRemove.Contains(x));
+        if (playerList.Count() == 0) {
+            return;
+        }
         while (dealer.CorrectSum() < 17) {
             dealer.GetCard();
             dealer.ShowInfo(); 
@@ -102,7 +107,11 @@ public class Game {
     }
 
     public void EndGame () {
-        Console.WriteLine("We are ready to compare cards!");
+        if (playerList.Count() > 0) {
+            Console.WriteLine("We are ready to compare cards!");
+        } else {
+            Console.WriteLine("All players lost!");
+        }
         if (dealer.CorrectSum() == 21) {
             foreach (var player in playerList) {
                 player.ShowCardsInfo();

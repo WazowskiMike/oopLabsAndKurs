@@ -15,5 +15,4 @@ public enum CardValues
     Four,
     Three,
     Two
-    
 }
