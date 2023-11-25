@@ -5,12 +5,12 @@ using OOP_ICT.Second;
 namespace OOP_ICT.Third;
 public class Player 
 {
-    private PlayerAccount playerAccount;
+    public PlayerAccount playerAccount;
     public BankAccount bankAccount { get; private set; }
     public List<Card> playerHand = new List<Card>();
     public string name { get; private set; }
     public int Bid = 0;
-   
+
 
     public Player (string name, double deposit) {
         this.playerAccount = new ChipBank(new PlayerAccountFactory()).CreateAccount(0);
@@ -73,26 +73,11 @@ public class Player
         playerAccount.Deposit(quantityOfChips);
     }
 
-    public void WinChips() {
-        playerAccount.Deposit(Bid * 2);
-        Bid = 0;
-    }
-
-    public void LoseChips() {
-        Bid = 0;
-    }
-
-    public void ReturnChips() {
-        playerAccount.Deposit(Bid);
-        Bid = 0;
-    }
-
-    public void BlackJack() {
-        playerAccount.Deposit(Bid * 1.5);
-        Bid = 0;
-    }
-
     public int TypeInt() {
-        return int.Parse(Console.ReadLine());
+        try {
+            return int.Parse(Console.ReadLine());
+        } catch (Exception) {
+            throw new WrongFormatException("You should write a positive number");
+        }
     }
 }

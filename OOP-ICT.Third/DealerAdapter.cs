@@ -60,4 +60,23 @@ public class DealerAdapter : Dealer {
         }
         return pointsSum;
     }
+
+    public void WinChips(Player player) {
+        player.playerAccount.Deposit(player.Bid * 2);
+        player.Bid = 0;
+    }
+
+    public void LoseChips(Player player) {
+        player.Bid = 0;
+    }
+
+    public void ReturnChips(Player player) {
+        player.playerAccount.Deposit(player.Bid);
+        player.Bid = 0;
+    }
+
+    public void BlackJack(Player player) {
+        player.playerAccount.Deposit(player.Bid * 1.5);
+        player.Bid = 0;
+    }
 } 

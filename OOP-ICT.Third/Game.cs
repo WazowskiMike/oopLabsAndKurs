@@ -68,7 +68,7 @@ public class Game {
             player.ShowCardsInfo();
             if (player.CorrectSum() == 21) {
                 Console.WriteLine($"{player.name}, it's blackjack! You won {player.Bid * 1.5} chips!");
-                player.BlackJack();
+                dealer.BlackJack(player);
                 toRemove.Add(player);
             }
         }
@@ -92,15 +92,17 @@ public class Game {
             }
             if (player.CorrectSum() > 21) {
                 Console.WriteLine($"You lost {player.Bid} chips");
-                player.LoseChips();
+                dealer.LoseChips(player);
                 toRemove.Add(player);
             }
         }
         playerList.RemoveAll(x => toRemove.Contains(x));
-        if (playerList.Count() == 0) {
+        bool allPlayersLost = playerList.Count() == 0;
+        bool dealerCanTakeACard = dealer.CorrectSum() < 17;
+        if (allPlayersLost) {
             return;
         }
-        while (dealer.CorrectSum() < 17) {
+        while (dealerCanTakeACard) {
             dealer.GetCard();
             dealer.ShowInfo(); 
         }
@@ -117,30 +119,30 @@ public class Game {
                 player.ShowCardsInfo();
                 if (player.CorrectSum() == 21) {
                     Console.WriteLine($"{player.name}, it's a draw! Your chips will be returned");
-                    player.ReturnChips();
+                    dealer.ReturnChips(player);
                 } else {
                     Console.WriteLine($"{player.name}, sorry ! You lost {player.Bid} chips");
-                    player.LoseChips();
+                    dealer.LoseChips(player);
                 }
             }
         } else if (dealer.CorrectSum() > 21) {
             foreach (var player in playerList) {
                 player.ShowCardsInfo();
                 Console.WriteLine($"{player.name}, you won {player.Bid * 2} chips!");
-                player.WinChips();
+                dealer.WinChips(player);
             }
         } else {
             foreach (var player in playerList) {
                 player.ShowCardsInfo();
                 if (player.CorrectSum() < dealer.CorrectSum()) {
                     Console.WriteLine($"{player.name}, sorry ! You lost {player.Bid} chips");
-                    player.LoseChips();
+                    dealer.LoseChips(player);
                 } else if (player.CorrectSum() == dealer.CorrectSum()) {
                     Console.WriteLine($"{player.name}, it's a draw! Your chips will be returned");
-                    player.ReturnChips();
+                    dealer.ReturnChips(player);
                 } else {
                     Console.WriteLine($"{player.name}, you won {player.Bid * 2} chips!");
-                    player.WinChips();
+                    dealer.WinChips(player);
                 }
             }
         }
