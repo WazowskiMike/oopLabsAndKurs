@@ -145,6 +145,6 @@ public class Game {
                     dealer.WinChips(player);
                 }
             }
-        }
+        } 
     }
 }

@@ -1,10 +1,11 @@
-﻿namespace OOP_ICT.Models
+﻿
+namespace OOP_ICT.Models
 {
     public class Card
     {
         public Suits Suit { get; private set; } 
         public CardValues CardValue { get; private set; }
-        public int Value { get; private set; }
+        public int Value { get; private set; } 
         private Dictionary<CardValues, int> valueDictionary = new Dictionary<CardValues, int> {
             {CardValues.Two, 2},
             {CardValues.Three, 3},
@@ -15,10 +16,10 @@
             {CardValues.Eight, 8},
             {CardValues.Nine, 9},
             {CardValues.Ten, 10},
-            {CardValues.Jack, 10},
-            {CardValues.Queen, 10},
-            {CardValues.King, 10},
-            {CardValues.Ace, 11}
+            {CardValues.Jack, 11},
+            {CardValues.Queen, 12},
+            {CardValues.King, 13},
+            {CardValues.Ace, 14}
 
         };
         public Card(Suits suit, CardValues cardValue)

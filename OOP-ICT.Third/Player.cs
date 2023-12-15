@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection.Metadata;
 using OOP_ICT.Models;
 using OOP_ICT.Second;
 namespace OOP_ICT.Third;
@@ -10,12 +11,14 @@ public class Player
     public List<Card> playerHand = new List<Card>();
     public string name { get; private set; }
     public int Bid = 0;
+    private bool isInGame;
 
 
     public Player (string name, double deposit) {
         this.playerAccount = new ChipBank(new PlayerAccountFactory()).CreateAccount(0);
         this.bankAccount = new Bank(new BankAccountFactory()).CreateAccount(deposit);
         this.name = name;
+        this.isInGame = true;
     }
 
     public void ShowCardsInfo() {
@@ -79,5 +82,17 @@ public class Player
         } catch (Exception) {
             throw new WrongFormatException("You should write a positive number");
         }
+    }
+
+    public bool GetIsInGame() {
+        return this.isInGame;
+    }
+
+    public void SetIsInGame(bool isInGame) {
+        this.isInGame = isInGame;
+    }
+
+    public void ClearHand() {
+        playerHand.Clear();
     }
 }
